@@ -7,6 +7,7 @@ radius = 21.9939
 height = 10.8468
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( 513.996, 340.465 )
 __meta__ = {
 "_edit_group_": true
 }
