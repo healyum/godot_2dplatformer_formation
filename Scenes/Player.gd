@@ -9,6 +9,10 @@ var motion = Vector2()
 
 # Update / tourne en boucle
 func _physics_process(delta):
+	walk()
+	move_and_slide(motion, FLOOR_NORMAL)
+	
+func walk():
 	# Si on appuie sur la touche droite ou D
 	if Input.is_action_pressed("ui_right"):
 		$AnimatedSprite.play("walk")
@@ -22,4 +26,3 @@ func _physics_process(delta):
 		$AnimatedSprite.play("idle")
 		motion.x = 0
 		
-	move_and_slide(motion, FLOOR_NORMAL)
