@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_05.png" type="Texture" id=1]
+[ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_03.png" type="Texture" id=2]
+[ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_04.png" type="Texture" id=3]
+[ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_06.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 31.997, 31.7656 )
+
+[node name="TileSet" type="Node2D"]
+
+[node name="PlatformCenter" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 80.5947, -2.56671 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PlatformCenter"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformCenter/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="PlatformDown" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 80.0814, 65.1945 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PlatformDown"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformDown/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="PlatformLeft" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 12.8335, -4.10674 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PlatformLeft"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformLeft/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="PlatformRight" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 147.843, -2.56671 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PlatformRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformRight/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
