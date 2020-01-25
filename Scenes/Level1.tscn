@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets Jeu 1/Other/buttonFloor_pressed.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 352.38, 17.6302 )
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 502.636, 195.052 )
+
+[node name="Platform" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 512.558, 443.556 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Platform"]
+position = Vector2( 324.676, 13.2827 )
+scale = Vector2( 13.0251, 4.32068 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+visible = false
+position = Vector2( 324.248, 13.2777 )
+shape = SubResource( 1 )
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 69.2804, 311.736 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Platform2"]
+position = Vector2( 324.676, 13.2827 )
+scale = Vector2( 13.0251, 4.32068 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+visible = false
+position = Vector2( 324.248, 13.2777 )
+shape = SubResource( 1 )
