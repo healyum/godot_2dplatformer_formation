@@ -11,6 +11,7 @@ extents = Vector2( 31.997, 31.7656 )
 [node name="TileSet" type="Node2D"]
 
 [node name="PlatformCenter" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 80.5947, -2.56671 )
 texture = ExtResource( 1 )
 __meta__ = {
@@ -25,6 +26,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="PlatformDown" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 80.0814, 65.1945 )
 texture = ExtResource( 2 )
 __meta__ = {
@@ -39,6 +41,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="PlatformLeft" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 12.8335, -4.10674 )
 texture = ExtResource( 3 )
 __meta__ = {
@@ -53,6 +56,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="PlatformRight" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 147.843, -2.56671 )
 texture = ExtResource( 4 )
 __meta__ = {
