@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_05.png" type="Texture" id=1]
 [ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_03.png" type="Texture" id=2]
 [ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_04.png" type="Texture" id=3]
 [ext_resource path="res://Assets Jeu 1/Tiles/Green tiles/tileGreen_06.png" type="Texture" id=4]
+[ext_resource path="res://Assets Jeu 1/Other/plantRed_5.png" type="Texture" id=5]
+[ext_resource path="res://Assets Jeu 1/Other/plantBlue_2.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.997, 31.7656 )
@@ -27,7 +29,7 @@ shape = SubResource( 1 )
 
 [node name="PlatformDown" type="Sprite" parent="."]
 editor/display_folded = true
-position = Vector2( 80.0814, 65.1945 )
+position = Vector2( 78.4894, 69.0124 )
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -57,7 +59,7 @@ shape = SubResource( 1 )
 
 [node name="PlatformRight" type="Sprite" parent="."]
 editor/display_folded = true
-position = Vector2( 147.843, -2.56671 )
+position = Vector2( 153.871, -1.1613 )
 texture = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -67,5 +69,35 @@ __meta__ = {
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformRight/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="FlowerRed" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 148.93, 67.4722 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FlowerRed"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FlowerRed/StaticBody2D"]
+visible = false
+shape = SubResource( 1 )
+
+[node name="FlowerBlue" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 210.68, 67.4722 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FlowerBlue"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FlowerBlue/StaticBody2D"]
 visible = false
 shape = SubResource( 1 )
