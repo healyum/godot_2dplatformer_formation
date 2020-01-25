@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets Jeu 1/Items/redJewel.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/redjewel.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 12.1099
 
 [node name="redjewel" type="Sprite"]
 texture = ExtResource( 1 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -17,3 +19,4 @@ collision_layer = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0, -1.16227 )
 shape = SubResource( 1 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

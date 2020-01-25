@@ -11,6 +11,8 @@ const JUMP_FORCE = -1000
 # Pour le déplacement du personnage (direction)
 var motion = Vector2()
 
+var coins = 0
+
 # Update / tourne en boucle
 func _physics_process(delta):
 	walk()
