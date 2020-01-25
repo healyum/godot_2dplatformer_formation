@@ -83,6 +83,11 @@ jump={
  ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Platform"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
