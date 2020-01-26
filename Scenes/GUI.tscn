@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets Jeu 1/Items/redJewel.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/Kenney Mini Square.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 2 )
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 11.0
+margin_top = 12.0
+margin_right = 51.0
+margin_bottom = 52.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="."]
+margin_left = 61.0
+margin_top = 8.99998
+margin_right = 119.0
+margin_bottom = 53.0
+custom_fonts/font = SubResource( 1 )
+text = "100"

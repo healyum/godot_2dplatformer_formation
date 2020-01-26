@@ -1,14 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets Jeu 1/Backgrounds/set1_background.png" type="Texture" id=1]
 [ext_resource path="res://Assets Jeu 1/Backgrounds/set3_tiles.png" type="Texture" id=2]
 [ext_resource path="res://Assets Jeu 1/Backgrounds/set3_hills.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=4]
 
 [node name="Camera2D" type="Camera2D"]
 current = true
 smoothing_enabled = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+editor/display_folded = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_mirroring = Vector2( 640, 480 )
@@ -37,3 +39,5 @@ motion_mirroring = Vector2( 640, 0 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 centered = false
+
+[node name="GUI" parent="." instance=ExtResource( 4 )]
