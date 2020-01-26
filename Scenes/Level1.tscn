@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/redjewel.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Spiky.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sounds/town theme.wav" type="AudioStream" id=7]
 
 [node name="Level1" type="Node2D"]
 
@@ -53,3 +54,10 @@ texture = null
 
 [node name="Enemy" parent="Enemy" instance=ExtResource( 6 )]
 position = Vector2( 961.409, 77.2438 )
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 7 )
+volume_db = -25.0
+autoplay = true
