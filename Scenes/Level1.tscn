@@ -16,6 +16,8 @@ position = Vector2( 502.636, 195.052 )
 [node name="Camera2D" parent="Player" instance=ExtResource( 2 )]
 position = Vector2( 134, 189 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 format = 1
@@ -57,7 +59,7 @@ position = Vector2( 961.409, 77.2438 )
 
 [node name="Sounds" type="Node2D" parent="."]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sounds"]
+[node name="Theme" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource( 7 )
 volume_db = -25.0
 autoplay = true
