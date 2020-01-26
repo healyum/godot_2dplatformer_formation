@@ -46,5 +46,10 @@ position = Vector2( 544.946, 288.857 )
 [node name="Spiky" parent="Enemy" instance=ExtResource( 5 )]
 position = Vector2( 1050.74, 672.001 )
 
+[node name="Ground" parent="Enemy" instance=ExtResource( 5 )]
+position = Vector2( 1009.25, 1413.46 )
+scale = Vector2( 107.205, 1 )
+texture = null
+
 [node name="Enemy" parent="Enemy" instance=ExtResource( 6 )]
-position = Vector2( 922.787, 97.9341 )
+position = Vector2( 961.409, 77.2438 )
