@@ -24,7 +24,7 @@ func _ready():
 # Update / tourne en boucle
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_cancel"):
- 		get_tree().change_scene("res://Scenes/Menu.tscn")
+		get_tree().change_scene("res://Scenes/Menu.tscn")
 	walk()
 	gravity(delta)
 	jump()
